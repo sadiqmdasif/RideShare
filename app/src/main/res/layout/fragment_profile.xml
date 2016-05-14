@@ -1,0 +1,136 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:showIn="@layout/activity_profile_fragment"
+    tools:context="com.apacheasif.rideShare.ProfileFragment"
+    android:gravity="center_vertical|center_horizontal|top">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name"
+        android:id="@+id/textViewFname"
+        android:layout_marginTop="28dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/editTextFname"
+        android:layout_toStartOf="@+id/editTextFname"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textViewFname"
+        android:layout_alignLeft="@+id/textViewFname"
+        android:layout_alignStart="@+id/textViewFname"
+        android:layout_marginTop="40dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone"
+        android:id="@+id/textViewPhone"
+        android:layout_below="@+id/textView3"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="34dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interest"
+        android:id="@+id/textViewInterest"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textViewPhone"
+        android:layout_alignLeft="@+id/textViewPhone"
+        android:layout_alignStart="@+id/textViewPhone"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Picture"
+        android:id="@+id/textViewPicture"
+        android:layout_below="@+id/textViewInterest"
+        android:layout_alignLeft="@+id/textViewInterest"
+        android:layout_alignStart="@+id/textViewInterest"
+        android:layout_marginTop="77dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_blue_dark" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        android:id="@+id/buttonSave"
+        android:layout_alignLeft="@+id/buttonPicture"
+        android:layout_alignStart="@+id/buttonPicture"
+        android:layout_alignRight="@+id/buttonPicture"
+        android:layout_alignEnd="@+id/buttonPicture"
+        android:layout_below="@+id/buttonPicture" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextFname"
+        android:layout_alignTop="@+id/textViewFname"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/editTextLname"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editTextPNo"
+        android:layout_alignTop="@+id/textViewPhone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinnerInterest"
+        android:spinnerMode="dropdown"
+        android:layout_alignTop="@+id/textViewInterest"
+        android:layout_alignLeft="@+id/editTextPNo"
+        android:layout_alignStart="@+id/editTextPNo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Picture"
+        android:id="@+id/buttonPicture"
+        android:layout_marginRight="38dp"
+        android:layout_marginEnd="38dp"
+        android:layout_alignTop="@+id/textViewPicture"
+        android:layout_alignRight="@+id/spinnerInterest"
+        android:layout_alignEnd="@+id/spinnerInterest" />
+
+</RelativeLayout>
